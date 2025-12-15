@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TikTok Video Downloader</h1>
+    <p>Download video TikTok tanpa watermark</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Masukkan Link Video TikTok</h2>
+
+        <!-- FORM -->
+        <form id="downloadForm" autocomplete="off">
+            <input
+                type="url"
+                id="tiktokUrl"
+                placeholder="Tempel link TikTok di sini"
+                required
+            >
+
+            <button type="submit" id="downloadBtn">
+                Download
+            </button>
+        </form>
+
+        <!-- STATUS -->
+        <p id="statusText" aria-live="polite"></p>
+
+        <!-- LOADING -->
+        <div id="loading" style="display:none;">
+            ⏳ Sedang memproses...
+        </div>
+
+        <!-- HASIL -->
+        <div id="result"></div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 TikTok Downloader | Dibuat untuk belajar web</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
